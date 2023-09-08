@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  place-content: center;
+  gap: 1em;
+  margin: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+li {
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
